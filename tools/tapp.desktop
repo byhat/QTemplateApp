@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=tapp
+Exec=sudo /home/orangepi/build/tapp
+Restart=always
+Terminal=true
+
