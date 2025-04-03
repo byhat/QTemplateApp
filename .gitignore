@@ -58,3 +58,6 @@ compile_commands.json
 build
 ./build
 ./build/*
+
+# clangd cache directory
+.cache
