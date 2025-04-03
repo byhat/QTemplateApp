@@ -27,7 +27,7 @@ AppEngine::AppEngine(QObject *parent)
         log->setLogLevel(conf.getLogicSettings().logLvl);
         m_Fullscreen = conf.getAppSettings().fullScreen;
     } else {
-        log->logError("Could not find config file or incorrect file  structure");
+        log->logError("Could not find config file or incorrect file structure");
         m_msg.sendError("Could not find config file \nor incorrect file structure");
     }
 }

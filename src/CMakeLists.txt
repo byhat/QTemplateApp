@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.16)
 
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC OFF)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 COMPONENTS Core Qml Gui SerialPort Concurrent REQUIRED)
+find_package(Qt6 COMPONENTS Core Qml Gui SerialPort Concurrent LabsSettings REQUIRED)
 
 # Специфичная для Orange Pi библиотека
 if(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "^(arm|aarch64)")

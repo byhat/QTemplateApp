@@ -4,6 +4,7 @@ import QtCore
 import QtQuick.Controls
 import QtQuick.Window
 import QtQuick.Layouts
+import Qt.labs.settings
 
 import "./elements"
 

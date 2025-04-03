@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         &app,
         [url, &log](QObject *obj, const QUrl &objUrl) {
             if (!obj && url == objUrl) {
-                log.logFatal("Couldnt found qml file");
+                log.logFatal(QString("Couldnt found qml file objUrl(%1)").arg(objUrl.toString()));
                 QCoreApplication::exit(-1);
             }
         },
