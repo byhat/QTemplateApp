@@ -1,7 +1,7 @@
 # Project Template
 Шаблон приложения на Qt6/QML/C++ для Orange/Raspberry/Banana Pi (аналог, не имеющий аналогов).
 
-## Setup build tools
+## Setup build tools (Ubuntu)
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential cmake git doxygen
 ```
 ```bash
-sudo apt install qt6-base-dev qt6-serialport-dev qt6-declarative-dev qml6-module-*
+sudo apt install qt6-base-dev qt6-serialport-dev qt6-declarative-dev qt6-serialport-dev qml6-module-*
 ```
 
 Для поддержки Wayland:
