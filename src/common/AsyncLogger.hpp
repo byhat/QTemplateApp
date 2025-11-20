@@ -298,7 +298,7 @@ private:
         m_logFile->close();
         m_logFile = fhelp.createFile(m_logFilePath);
 
-        if (m_logFile.get() != nullptr) {
+        if (m_logFile.get() == nullptr) {
             qCritical() << __FUNCTION__
                         << "Failed to open log file:" << m_logFilePath;
 
